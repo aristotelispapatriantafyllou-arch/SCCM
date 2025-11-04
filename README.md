@@ -29,7 +29,8 @@ office 365 (outlook, Teams) does not update even after you sign in.
 
 ## 🧾 How It Works
 
-1. Describe the logic step-by-step  
-2. Include sample code or snippets  
-   ```powershell
-   Get-ChildItem "$env:LOCALAPPDATA\Microsoft\Teams" -Recurse | Remove-Item -Force
+1.Close allo M365 Apps (teams incl.)
+2. Stop WebAccount service
+3. Clear $env:LOCALAPPDATA\Packages\Microsft.AADPlugin...\AC\TokenBroker\
+4. Start the service
+5. open any office app and re-enter credentials
